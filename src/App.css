@@ -1,38 +1,98 @@
-.App {
+main {
+  width: 320px;
+  height: 320px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25.6px;
+  line-height: 30px;
+  color: #2b283a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.play-time {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.6px;
+  line-height: 15px;
+  color: green;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.roll-counts {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.6px;
+  line-height: 15px;
+  color: purple;
+}
+
+.instructions {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.1072px;
+  line-height: 16px;
+  text-align: center;
+  color: #4a4e74;
+}
+
+.die-element {
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 3.81277px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.die-num {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.5889px;
+  line-height: 24px;
+  background-color: white;
+}
+
+.dice-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 18px;
+  column-gap: 18px;
+}
+
+.roll-btn {
+  background: #5035ff;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 3.81277px;
+  padding: 6px 21px;
+  width: 150px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.384px;
+  line-height: 19px;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.roll-btn:active {
+  transform: scale(0.97);
 }
